@@ -41,7 +41,7 @@ module.exports = configure(function (ctx) {
       // 'ionicons-v4',
       // 'mdi-v5',
       'fontawesome-v5',
-      // 'eva-icons',
+      'eva-icons',
       // 'themify',
       // 'line-awesome',
       // 'roboto-font-latin-ext', // this or either 'roboto-font', NEVER both!
@@ -105,7 +105,7 @@ module.exports = configure(function (ctx) {
       plugins: []
     },
 
-    // animations: 'all', // --- includes all animations
+    animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations
     animations: [],
 
@@ -144,8 +144,8 @@ module.exports = configure(function (ctx) {
       },
 
       manifest: {
-        name: 'resume',
-        short_name: 'resume',
+        name: 'Resume',
+        short_name: 'Resume',
         description: 'resume jutipong.su',
         display: 'standalone',
         orientation: 'portrait',
