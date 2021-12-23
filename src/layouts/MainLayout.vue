@@ -1,6 +1,6 @@
 <template>
   <q-layout view="hHh lpR fff">
-    <q-header reveal class="bg-light-blue-9 text-white">
+    <q-header reveal class="bg-light-blue-10 text-white">
       <q-tabs no-caps inline-label align="right">
         <q-btn
           v-if="!isMobile"
@@ -43,16 +43,13 @@
     </q-header>
 
     <q-page-container>
-      <q-page class="row">
-        <router-view />
-      </q-page>
+      <router-view />
     </q-page-container>
 
     <q-footer :class="!$q.dark.mode && 'text-black'" class="mb" align="center">
       Developed with
       <q-icon size="sm" name="las la-heartbeat" color="pink" class="q-mr-sm q-ml-sm"></q-icon>+
       <q-icon size="sm" name="lab la-vuejs" color="green" class="q-mr-sm"></q-icon>
-      <!-- <span>&copy; {{ new Date().getFullYear() }}</span> -->
     </q-footer>
   </q-layout>
 </template>
