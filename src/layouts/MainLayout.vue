@@ -50,7 +50,7 @@
       </q-page-scroller>
     </q-page-container>
 
-    <q-footer class="bg-grey-1 text-black mb" :align="$q.platform.is.mobile ? 'center' : 'right'">
+    <q-footer class="text-black mb" style="font-weight: 500" :align="$q.platform.is.mobile ? 'center' : 'right'">
       Developed with
       <q-icon size="sm" name="las la-heartbeat" color="pink" class="q-mr-sm q-ml-sm"></q-icon>+
       <q-icon size="sm" name="lab la-vuejs" color="green" class="q-mr-sm"></q-icon>

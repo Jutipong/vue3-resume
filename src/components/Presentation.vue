@@ -14,7 +14,7 @@ const pres_second = ref<string>('I always liked to get into projects using the s
 </script>
 
 <style scoped lang="scss">
-@import "../../css/constants.scss";
+@import "../css/constants.scss";
 h3 {
   font-size: 1.2rem;
   text-transform: uppercase;

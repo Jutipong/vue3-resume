@@ -16,10 +16,8 @@
 </script>
 
 <style scoped lang="scss">
-// @import "../../css/constants.scss";
-
 .parallax {
-  background-image: url("../../assets/img/bg.webp");
+  background-image: url("../assets/img/bg.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

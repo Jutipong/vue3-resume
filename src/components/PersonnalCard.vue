@@ -19,7 +19,7 @@ const email = ref<string>('jutipong.su@outlook.com, jutipong.sb@gmail.com')
 const phone = ref<string>('0885559330 (AIS)')
 </script>
 <style scoped lang="scss">
-@import "../../css/constants.scss";
+@import "../css/constants.scss";
 
 h3 {
   font-size: 1.2rem;

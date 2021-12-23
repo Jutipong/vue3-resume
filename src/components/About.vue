@@ -11,7 +11,7 @@
         <div class="section-content">
             <div class="row justify-center">
                 <q-avatar size="200px">
-                    <img src="../../assets/img/photo.jpeg" />
+                    <img src="../assets/img/photo.jpeg" />
                 </q-avatar>
             </div>
             <div class="row">
@@ -29,28 +29,14 @@
 
 <script lang="ts" setup>
 // import Title from './Title.vue'
-import PersonnalCard from '../../components/Index/PersonnalCard.vue'
-import Presentation from '../../components/Index/Presentation.vue'
+import PersonnalCard from '../components/PersonnalCard.vue'
+import Presentation from '../components/Presentation.vue'
 
-// export default {
-    // name: 'AboutMe',
-    // props: ['user', 'content', 'links'],
-    // components: {
-    //     Title,
-    //     PersonnalCard,
-    //     Presentation,
-    //     Photo
-    // },
-// }
 </script>
 
 <style scoped lang="scss">
-@import "../../css/constants.scss";
+@import "../css/constants.scss";
 
-// .wrapper {
-//     padding-top: 40px;
-//     margin-bottom: 40px;
-// }
 .title {
     text-align: center;
     color: map-get($colors, primary);
@@ -75,42 +61,4 @@ import Presentation from '../../components/Index/Presentation.vue'
         border-bottom: 1px solid map-get($colors, primary);
     }
 }
-// .title {
-//     text-align: center;
-//     color: map-get($colors, primary);
-//     h2 {
-//         font-size: 4rem;
-//         text-transform: uppercase;
-//     }
-// }
-
-// .text-wrapper {
-//     text-transform: uppercase;
-//     &:after {
-//         content: "";
-//         width: 150px;
-//         display: block;
-//         margin: 20px auto;
-//         border-bottom: 1px solid map-get($colors, primary);
-//     }
-// }
-
-// #about {
-// background-color: lighten(map-get($colors, dark), 100%);
-// background-color:
-// }
-
-// @media (min-width: #{map-get($breakpoints, medium)}) {
-//     .section-content {
-//         width: 80%;
-//         margin: 0 auto;
-//     }
-// }
-
-// @media (max-width: #{map-get($breakpoints, medium)}) {
-//     .card-mobile {
-//         text-align: center !important;
-//         margin-top: 20px;
-//     }
-// }
 </style>
