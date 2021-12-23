@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div class="q-ma-lg">
         <div class="title">
             <div class="about">ABOUT ME</div>
             <!-- <div class="wrapper"> -->
@@ -8,19 +8,19 @@
         </div>
 
         <!-- <AnimateOnVisible name="fadeRight" :duration="1"> -->
-        <div class="section-content">
-            <div class="container-fluid">
-                <div class="row justify-content-center">
-                    <!-- <Photo :user="user"/> -->
+        <div class="section-content q-ma-lg">
+            <div class="row justify-center">
+                <q-avatar size="200px">
+                    <img src="../../assets/img/photo.jpeg" />
+                </q-avatar>
+            </div>
+            <div class="row">
+                <div class="col-md-7 mr-auto card-mobile">
+                    <Presentation />
                 </div>
-                <!-- <div class="row">
-                        <div class="col-md-7 mr-auto card-mobile">
-                            <Presentation :content="content"/>
-                        </div>
-                        <div class="col-md-4 card-mobile">
-                            <PersonnalCard :user="user" :links="links"/>
-                        </div>
-                </div>-->
+                <div class="col-md-4 card-mobile">
+                    <PersonnalCard />
+                </div>
             </div>
         </div>
         <!-- </AnimateOnVisible> -->
@@ -29,9 +29,8 @@
 
 <script lang="ts" setup>
 // import Title from './Title.vue'
-// import PersonnalCard from './PersonnalCard.vue'
-// import Presentation from './Presentation.vue'
-// import Photo from './Photo.vue'
+import PersonnalCard from '../../components/Index/PersonnalCard.vue'
+import Presentation from '../../components/Index/Presentation.vue'
 
 // export default {
     // name: 'AboutMe',
@@ -48,10 +47,10 @@
 <style scoped lang="scss">
 @import "../../css/constants.scss";
 
-.wrapper {
-    padding-top: 40px;
-    margin-bottom: 40px;
-}
+// .wrapper {
+//     padding-top: 40px;
+//     margin-bottom: 40px;
+// }
 .title {
     text-align: center;
     color: map-get($colors, primary);
