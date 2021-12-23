@@ -1,5 +1,5 @@
 <template>
-  <div class="row q-pa-md q-ma-md">
+  <div class="row" :class="$q.platform.is.desktop && 'q-pa-lg q-ma-lg'">
     <h3>{{ name }}</h3>
     <div class="data">
       <strong>E-mail:</strong>

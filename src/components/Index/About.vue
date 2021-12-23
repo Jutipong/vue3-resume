@@ -8,7 +8,7 @@
         </div>
 
         <!-- <AnimateOnVisible name="fadeRight" :duration="1"> -->
-        <div class="section-content q-ma-lg">
+        <div class="section-content">
             <div class="row justify-center">
                 <q-avatar size="200px">
                     <img src="../../assets/img/photo.jpeg" />

@@ -44,6 +44,10 @@
 
     <q-page-container>
       <router-view />
+      <!-- place QPageScroller at end of page -->
+      <q-page-scroller position="bottom-right" :scroll-offset="100" :offset="[20, 20]">
+        <q-btn fab icon="las la-angle-double-up" color="primary" />
+      </q-page-scroller>
     </q-page-container>
 
     <q-footer class="bg-grey-1 text-black mb" :align="$q.platform.is.mobile ? 'center' : 'right'">
