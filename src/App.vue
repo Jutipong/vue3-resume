@@ -16,8 +16,13 @@ export default defineComponent({
 <style scoped lang="scss">
 @import "./css/constants.scss";
 
+// @font-face {
+//   font-family: customfont;
+//   src: url(./assets/fonts/Montserrat-Regular.ttf);
+// }
+
 #app {
-  font-family: Montserrat-Regular, serif;
+  // font-family: Montserrat-Regular;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;

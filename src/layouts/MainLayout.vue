@@ -1,6 +1,6 @@
 <template>
-  <q-layout view="hHh lpR fff">
-    <q-header reveal class="bg-light-blue-10 text-white">
+  <q-layout view="hHh lpR ffF">
+    <!-- <q-header reveal class="bg-light-blue-10 text-white">
       <q-tabs no-caps inline-label align="right">
         <q-btn
           v-if="!isMobile"
@@ -40,13 +40,13 @@
           @click="onDarkMode"
         />
       </q-tabs>
-    </q-header>
+    </q-header>-->
 
     <q-page-container>
       <router-view />
     </q-page-container>
 
-    <q-footer :class="!$q.dark.mode && 'text-black'" class="mb" align="center">
+    <q-footer class="bg-grey-1 text-black mb" :align="$q.platform.is.mobile ? 'center' : 'right'">
       Developed with
       <q-icon size="sm" name="las la-heartbeat" color="pink" class="q-mr-sm q-ml-sm"></q-icon>+
       <q-icon size="sm" name="lab la-vuejs" color="green" class="q-mr-sm"></q-icon>
@@ -55,19 +55,19 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { Platform, LocalStorage, Dark } from 'quasar'
-import { useRouter } from 'vue-router';
-const router = useRouter();
+// import { computed, onMounted } from 'vue'
+// import { Platform, LocalStorage, Dark } from 'quasar'
+// import { useRouter } from 'vue-router';
+// const router = useRouter();
 
-onMounted(() => Dark.set(LocalStorage.getItem('dark_mode') ?? false))
-const isMobile = computed<boolean>(() => (Boolean)(Platform.is.mobile))
-const onDarkMode = () => {
-  Dark.toggle()
-  LocalStorage.set('dark_mode', Dark.mode)
-}
+// onMounted(() => Dark.set(LocalStorage.getItem('dark_mode') ?? false))
+// const isMobile = computed<boolean>(() => (Boolean)(Platform.is.mobile))
+// const onDarkMode = () => {
+//   Dark.toggle()
+//   LocalStorage.set('dark_mode', Dark.mode)
+// }
 
-const routerName = computed(() => router.currentRoute.value.fullPath.replace('/', ''))
+// const routerName = computed(() => router.currentRoute.value.fullPath.replace('/', ''))
 </script>
 
 <style scoped>
@@ -76,6 +76,8 @@ const routerName = computed(() => router.currentRoute.value.fullPath.replace('/'
 }
 
 .mb {
+  padding-top: 2px;
   padding-bottom: 2px;
+  /* padding-left: 10px; */
 }
 </style>

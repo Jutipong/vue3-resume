@@ -1,19 +1,17 @@
 <template>
-  <div class="full-width window-height">
-    <header class="header parallax">
-      <div class="name">
-        <div class="wrapper-name">
-          <transition appear enter-active-class="animated fadeInDown">
-            <div class="namex">jutipong subin</div>
-          </transition>
-          <hr />
-          <transition appear enter-active-class="animated fadeInUp">
-            <p>Full-Stack Developer</p>
-          </transition>
-        </div>
-      </div>
-    </header>
+  <div class="full-width window-height justify-between parallax">
+    <q-parallax>
+      <transition appear enter-active-class="animated fadeInDown">
+        <div class="name">JUTIPONG SUBIN</div>
+      </transition>
+      <hr :style="$q.platform.is.desktop ? 'width: 350px;' : 'width: 80%;'" />
+      <transition appear enter-active-class="animated fadeInUp">
+        <div class="full_stack">Full-Stack Developer</div>
+      </transition>
+    </q-parallax>
   </div>
+  <!-- </div> -->
+  <!-- </div> -->
 </template>
 
 <script lang="ts" setup>
@@ -22,13 +20,9 @@
 <style scoped lang="scss">
 @import "../../css/constants.scss";
 
-.header {
-  padding: 20px;
-  background-color: map-get($colors, dark);
-}
-
 .parallax {
-  background-image: url("../../assets/img/bg.jpg");
+  // background-image: url("../../assets/img/bg.jpg");
+  background-image: url("../../assets/img/bg.webp");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -37,71 +31,58 @@
 }
 
 .name {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  z-index: 400;
-
-  .wrapper-name {
-    width: 320px;
-  }
-
-  .namex {
-    font-size: 2.3rem;
-    padding: 2px 10px;
-    text-align: center;
-    text-transform: uppercase;
-    color: whitesmoke;
-  }
-
-  p {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 5px auto;
-    color: whitesmoke;
-  }
-
-  hr {
-    border: 1px solid whitesmoke;
-  }
+  font-size: 2.2rem;
+  padding: 2px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: whitesmoke;
 }
 
-@media (min-width: #{map-get($breakpoints, small)}) {
-  .name {
-    .wrapper-name {
-      width: 55%;
-    }
-    h1 {
-      font-size: 2.8rem;
-      padding: 4% 8%;
-    }
-    p {
-      font-size: 2rem;
-    }
-  }
+.full_stack {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 5px auto;
+  color: whitesmoke;
 }
-@media (min-width: #{map-get($breakpoints, medium)}) {
-  .name {
-    .wrapper-name {
-      width: 450px;
-    }
-    h1 {
-      font-size: 4rem;
-      padding: 4% 10%;
-    }
-    p {
-      font-size: 2.5rem;
-    }
-  }
+
+hr {
+  border: 1px solid whitesmoke;
 }
-@media only screen and (max-device-width: 1024px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
+// }
+
+// @media (min-width: #{map-get($breakpoints, small)}) {
+//   .name_h {
+//     .wrapper-name {
+//       width: 55%;
+//     }
+//     .name {
+//       font-size: 2.2rem;
+//       padding: 4% 8%;
+//     }
+//     p {
+//       font-size: 1.6rem;
+//     }
+//   }
+// }
+// @media (min-width: #{map-get($breakpoints, medium)}) {
+//   .name_h {
+//     .wrapper-name {
+//       width: 450px;
+//     }
+//     .name {
+//       font-size: 2.4rem;
+//       padding: 4% 10%;
+//     }
+//     p {
+//       font-size: 1.6rem;
+//     }
+//   }
+// }
+// @media only screen and (max-device-width: 1024px) {
+//   .parallax {
+//     background-attachment: scroll;
+//   }
+// }
 </style>
 
 
