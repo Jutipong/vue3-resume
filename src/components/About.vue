@@ -32,7 +32,6 @@
 </template>
 
 <script lang="ts" setup>
-// import Title from './Title.vue'
 import PersonnalCard from '../components/PersonnalCard.vue'
 import Presentation from '../components/Presentation.vue'
 

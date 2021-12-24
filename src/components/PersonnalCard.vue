@@ -12,15 +12,15 @@
   </div>
   <!-- <SocialBar :links="links"/> -->
 </template>
+
 <script lang="ts" setup>
 import { ref } from 'vue';
 const name = ref('Jutipong Subin')
 const email = ref<string>('jutipong.su@outlook.com, jutipong.sb@gmail.com')
 const phone = ref<string>('0885559330 (AIS)')
 </script>
-<style scoped lang="scss">
-@import "../css/constants.scss";
 
+<style scoped lang="scss">
 h3 {
   font-size: 1.2rem;
   text-transform: uppercase;

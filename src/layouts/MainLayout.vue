@@ -44,8 +44,15 @@
 
     <q-page-container>
       <router-view />
+
+      <q-page-sticky position="bottom-right" :offset="[20, 20]">
+        <q-btn fab icon="las la-file-download" color="positive">
+          <q-tooltip>Download Resume</q-tooltip>
+        </q-btn>
+      </q-page-sticky>
+
       <!-- place QPageScroller at end of page -->
-      <q-page-scroller position="bottom-right" :scroll-offset="100" :offset="[20, 20]">
+      <q-page-scroller position="bottom-right" :scroll-offset="100" :offset="[90, 20]">
         <q-btn fab icon="las la-angle-double-up" color="primary" />
       </q-page-scroller>
     </q-page-container>
