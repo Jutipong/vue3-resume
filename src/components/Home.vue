@@ -3,14 +3,11 @@
     <header class="header parallax">
       <div class="name">
         <div class="wrapper-name">
-          <!-- <transition appear :duration="5000" enter-active-class="animated fadeInDown"> -->
-          <transition style="animation-duration: 2s" appear enter-active-class="animated fadeIn">
+          <transition style="animation-duration: 6s" appear enter-active-class="animated fadeIn">
             <div class="namex">jutipong subin</div>
           </transition>
           <hr />
-          <!-- <transition appear enter-active-class="animated fadeInUp"> -->
           <p class="line anim-typewriter">Full-Stack Developer</p>
-          <!-- </transition> -->
         </div>
       </div>
     </header>
@@ -52,25 +49,26 @@
     padding: 2px 10px;
     text-align: center;
     text-transform: uppercase;
-    color: whitesmoke;
+    color: white;
   }
 
   p {
     font-size: 1.5rem;
     text-align: center;
     margin: 5px auto;
-    color: whitesmoke;
+    color: white;
+    margin-top: 10px !important;
   }
 
   hr {
-    border: 1px solid whitesmoke;
+    border: 1px solid white;
   }
 }
 
 /*Animation*/
 .line {
   position: relative;
-  border-right: 2px solid whitesmoke; //rgba(255, 255, 255, 0.75);
+  border-right: 2px solid white;
   white-space: nowrap;
   overflow: hidden;
 }
