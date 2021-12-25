@@ -1,12 +1,7 @@
 <template>
     <div class="bg-grey-12">
         <div class="q-pa-lg">
-            <div class="title">
-                <div class="about">ABOUT ME</div>
-                <!-- <div class="wrapper"> -->
-                <div class="text-wrapper">HOPE TO KNOW YOU AFTER</div>
-                <!-- </div> -->
-            </div>
+            <Title title="ABOUT ME" description="HOPE TO KNOW YOU AFTER"></Title>
 
             <!-- <AnimateOnVisible name="fadeRight" :duration="1"> -->
             <div class="section-content">
@@ -19,10 +14,10 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8">
-                        <Presentation />
+                        <Infomation />
                     </div>
                     <div class="col-md-4">
-                        <PersonnalCard />
+                        <Contact />
                     </div>
                 </div>
             </div>
@@ -32,36 +27,12 @@
 </template>
 
 <script lang="ts" setup>
-import PersonnalCard from '../components/PersonnalCard.vue'
-import Presentation from '../components/Presentation.vue'
+import Title from '../components/Title.vue';
+import Contact from '../components/Contact.vue'
+import Infomation from '../components/Infomation.vue'
 
 </script>
 
 <style scoped lang="scss">
 @import "../css/constants.scss";
-
-.title {
-    text-align: center;
-    color: map-get($colors, primary);
-    h2 {
-        font-size: 4rem;
-        text-transform: uppercase;
-    }
-}
-
-.about {
-    font-size: 2.4rem;
-    text-transform: uppercase;
-}
-
-.text-wrapper {
-    text-transform: uppercase;
-    &:after {
-        content: "";
-        width: 150px;
-        display: block;
-        margin: 20px auto;
-        border-bottom: 1px solid map-get($colors, primary);
-    }
-}
 </style>

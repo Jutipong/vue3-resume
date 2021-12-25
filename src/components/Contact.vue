@@ -15,8 +15,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
-const name = ref('Jutipong Subin')
-const email = ref<string>('jutipong.su@outlook.com, jutipong.sb@gmail.com')
+const name = ref('Contact')
+const email = ref<string>('Jutipong.su@outlook.com, Jutipong.sb@gmail.com')
 const phone = ref<string>('0885559330 (AIS)')
 </script>
 
