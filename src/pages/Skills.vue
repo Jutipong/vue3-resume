@@ -38,7 +38,6 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'NestJs', Img: 'NestJs.svg' },
     { Title: 'Vue2 / Vue3', Img: 'VueJs.png' },
     { Title: 'Nuxt', Img: 'Nuxt.png' },
-    { Title: 'VueX', Img: 'Vuex.jpeg' },
     { Title: 'Quasar', Img: 'Quasar.png' },
     { Title: 'Vuetify', Img: 'Vuetify.png' },
     { Title: 'Boostrap', Img: 'Bootstrap.png' },
