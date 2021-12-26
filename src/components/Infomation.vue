@@ -1,5 +1,5 @@
 <template>
-  <div :class="$q.platform.is.desktop && 'q-pa-lg q-ma-lg'">
+  <div :class="!$q.screen.xs && !$q.screen.sm && 'q-pa-lg q-ma-lg'">
     <h3>{{ title }}</h3>
     <div class="begin">{{ pres_first }}</div>
     <p>{{ pres_second }}</p>
