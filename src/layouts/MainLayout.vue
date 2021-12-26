@@ -1,5 +1,5 @@
 <template>
-  <q-layout view="hHh lpR ffF">
+  <q-layout view="hHh lpR fff">
     <!-- <q-header reveal class="bg-light-blue-10 text-white">
       <q-tabs no-caps inline-label align="right">
         <q-btn
@@ -57,7 +57,7 @@
       </q-page-scroller>
     </q-page-container>
 
-    <q-footer class="text-black mb" style="font-weight: 400" :align="$q.platform.is.mobile ? 'center' : 'right'">
+    <q-footer class="bg-grey-10 text-white" style="font-weight: 400" :align="$q.platform.is.mobile ? 'center' : 'right'">
       Developed with
       <q-icon size="sm" name="las la-heartbeat" color="pink" class="q-mr-sm q-ml-sm"></q-icon>+
       <q-icon size="sm" name="lab la-vuejs" color="green" class="q-mr-sm"></q-icon>
@@ -82,12 +82,12 @@
 </script>
 
 <style scoped>
-.q-layout__section--marginal {
+/* .q-layout__section--marginal {
   background-color: transparent;
-}
-.mb {
+} */
+/* .mb {
   background: transparent;
-}
+} */
 /* .mb {
   padding-top: 2px;
   padding-bottom: 2px; */

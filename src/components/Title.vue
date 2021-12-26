@@ -1,5 +1,5 @@
 <template>
-    <div class="title justify-center">
+    <div :class="prop.textColor" class="title justify-center">
         <div class="about">{{ prop.title }}</div>
         <!-- <div class="wrapper"> -->
         <div class="text-wrapper">{{ prop.description }}</div>
@@ -9,8 +9,9 @@
 
 <script lang="ts" setup>
 const prop = defineProps<{
+    textColor?: string;
     title: string;
-    description: string
+    description: string;
 }>();
 </script>
 
@@ -36,10 +37,10 @@ const prop = defineProps<{
     text-transform: uppercase;
     &:after {
         content: "";
-        width: 150px;
+        width: 250px;
         display: block;
         margin: 20px auto;
-        border-bottom: 1px solid map-get($colors, primary);
+        border-bottom: 1px solid red;
     }
 }
 </style>
