@@ -1,5 +1,5 @@
 <template>
-    <div class="title">
+    <div class="title justify-center">
         <div class="about">{{ prop.title }}</div>
         <!-- <div class="wrapper"> -->
         <div class="text-wrapper">{{ prop.description }}</div>
