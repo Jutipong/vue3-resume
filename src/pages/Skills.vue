@@ -32,6 +32,8 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'Go', Img: 'Go.png' },
     { Title: 'Go Fiber', Img: 'GoFiber.png' },
     { Title: 'Go Gin', Img: 'GoGin.png' },
+    { Title: 'JavaScript', Img: 'JavaScript.png' },
+    { Title: 'TypeScript', Img: 'TypeScript.png' },
     { Title: 'NodeJs', Img: 'NodeJs.png' },
     { Title: 'NestJs', Img: 'NestJs.svg' },
     { Title: 'VueJS', Img: 'VueJs.png' },
