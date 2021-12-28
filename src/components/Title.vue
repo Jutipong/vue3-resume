@@ -1,9 +1,3 @@
-<template>
-    <div :class="prop.textColor" class="title justify-center">
-        <div class="about">{{ prop.title }}</div>
-        <div class="text-wrapper">{{ prop.description }}</div>
-    </div>
-</template>
 
 <script lang="ts" setup>
 const prop = defineProps<{
@@ -13,6 +7,12 @@ const prop = defineProps<{
 }>();
 </script>
 
+<template>
+    <div :class="prop.textColor" class="title justify-center">
+        <div class="about">{{ prop.title }}</div>
+        <div class="text-wrapper">{{ prop.description }}</div>
+    </div>
+</template>
 
 <style scoped lang="scss">
 @import "../css/constants.scss";

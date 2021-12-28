@@ -1,25 +1,3 @@
-<template >
-  <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md q-pt-xl">
-    <div class="q-pb-sm">
-      <Title textColor="text-white" title="EXPERIENCE" description="PROFESSIONAL AND ACADEMIC"></Title>
-    </div>
-    <div class="bg-grey-10 text-white">
-      <q-timeline :layout="$q.screen.sm || $q.screen.xs ? 'dense' : 'comfortable'" side="right" color="secondary">
-        <q-timeline-entry v-for="(item, index) in datas" :key="index" :title="item.Company" :subtitle="item.Date" color="orange" side="left">
-          <div>
-            <u>Position:</u>
-            {{ item.Position }}
-          </div>
-          <div v-if="item.Description">
-            <u>Description:</u>
-            {{ item.Description }}
-          </div>
-        </q-timeline-entry>
-      </q-timeline>
-    </div>
-  </div>
-</template>
-
 <script lang="ts" setup>
 type ExperienceModel = {
   Company: string
@@ -73,3 +51,25 @@ const datas = ref<Array<ExperienceModel>>([
   },
 ])
 </script>
+
+<template >
+  <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md q-pt-xl">
+    <div class="q-pb-sm">
+      <Title textColor="text-white" title="EXPERIENCE" description="PROFESSIONAL AND ACADEMIC"></Title>
+    </div>
+    <div class="bg-grey-10 text-white">
+      <q-timeline :layout="$q.screen.sm || $q.screen.xs ? 'dense' : 'comfortable'" side="right" color="secondary">
+        <q-timeline-entry v-for="(item, index) in datas" :key="index" :title="item.Company" :subtitle="item.Date" color="orange" side="left">
+          <div>
+            <u>Position:</u>
+            {{ item.Position }}
+          </div>
+          <div v-if="item.Description">
+            <u>Description:</u>
+            {{ item.Description }}
+          </div>
+        </q-timeline-entry>
+      </q-timeline>
+    </div>
+  </div>
+</template>

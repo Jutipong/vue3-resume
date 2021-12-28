@@ -1,20 +1,5 @@
-<template>
-    <div class="text-wrapper" :class="!$q.screen.xs && !$q.screen.sm && 'q-ma-xl'">
-        <h3>Education</h3>
-        <div class="data" v-for="(item,index) in datas" :key="index">
-            <strong>{{ item.Title }}</strong>
-            <div>{{ item.Description }}</div>
-            <div>
-                <strong>GPA:</strong>
-                {{ item.GPA.toFixed(2) }}
-            </div>
-        </div>
-    </div>
-</template>
-
 <script lang="ts" setup>
-
-type Education = {
+interface Education {
     Title: string
     Description: string
     GPA: number
@@ -39,8 +24,21 @@ const datas = ref<Array<Education>>([
         GPA: 3.00
     }
 ])
-
 </script>
+
+<template>
+    <div class="text-wrapper" :class="!$q.screen.xs && !$q.screen.sm && 'q-ma-xl'">
+        <h3>Education</h3>
+        <div class="data" v-for="(item,index) in datas" :key="index">
+            <strong>{{ item.Title }}</strong>
+            <div>{{ item.Description }}</div>
+            <div>
+                <strong>GPA:</strong>
+                {{ item.GPA.toFixed(2) }}
+            </div>
+        </div>
+    </div>
+</template>
 
 <style scoped lang="scss">
 h3 {

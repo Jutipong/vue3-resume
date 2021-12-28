@@ -1,3 +1,12 @@
+<script lang="ts" setup>
+import { ref } from 'vue';
+const title = ref<string>('Personal')
+const nationality = 'Thai'
+const height = 168
+const weight = 68
+const birthDate = 'Jan 20 1988'
+</script>
+
 <template>
   <div class="items-start" :class="!$q.screen.xs && !$q.screen.sm && 'q-ma-xl'">
     <h3>{{ title }}</h3>
@@ -20,21 +29,12 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-import { ref } from 'vue';
-const title = ref<string>('Personal')
-const nationality = 'Thai'
-const height = 168
-const weight = 68
-const birthDate = 'Jan 20 1988'
-</script>
-
 <style scoped lang="scss">
 h3 {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 600;
   display: block;
-  border-bottom: 1px solid green
+  border-bottom: 1px solid green;
 }
 </style>
