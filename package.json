@@ -14,7 +14,7 @@
   "dependencies": {
     "@quasar/extras": "^1.12.2",
     "core-js": "^3.6.5",
-    "quasar": "^2.0.0",
+    "quasar": "^2.4.2",
     "vue-compare-image": "^0.2.0"
   },
   "devDependencies": {
