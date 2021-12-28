@@ -1,9 +1,7 @@
 <template>
     <div :class="prop.textColor" class="title justify-center">
         <div class="about">{{ prop.title }}</div>
-        <!-- <div class="wrapper"> -->
         <div class="text-wrapper">{{ prop.description }}</div>
-        <!-- </div> -->
     </div>
 </template>
 

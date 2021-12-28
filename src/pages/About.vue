@@ -9,21 +9,24 @@
             </q-avatar>
         </div>
         <div class="row">
-            <div class="col-md-8">
-                <Infomation />
-            </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
+                <Personal />
+                <Certification />
                 <Contact />
+            </div>
+            <div class="col-md-6">
+                <Education />
             </div>
         </div>
     </div>
 </template>
-
+Certifications
 <script lang="ts" setup>
 import Title from '../components/Title.vue';
 import Contact from '../components/Contact.vue'
-import Infomation from '../components/Infomation.vue'
-
+import Personal from '../components/Personal.vue'
+import Education from 'src/components/Education.vue';
+import Certification from 'src/components/Certification.vue';
 </script>
 
 <style scoped lang="scss">
