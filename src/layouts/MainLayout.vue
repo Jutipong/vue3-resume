@@ -52,7 +52,7 @@
       </q-page-sticky>
 
       <!-- place QPageScroller at end of page -->
-      <q-page-scroller position="bottom-right" :scroll-offset="100" :offset="[90, 20]">
+      <q-page-scroller position="bottom-right" :scroll-offset="100" :offset="[20, 90]">
         <q-btn fab icon="las la-angle-double-up" color="primary" />
       </q-page-scroller>
     </q-page-container>

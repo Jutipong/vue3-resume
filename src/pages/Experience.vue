@@ -1,3 +1,57 @@
+<script lang="ts" setup>
+type ExperienceModel = {
+  Company: string
+  Date: string
+  Position: string
+  Description?: string
+}
+
+import { ref } from 'vue';
+import Title from 'src/components/Title.vue';
+
+const datas = ref<Array<ExperienceModel>>([
+  {
+    Company: 'ADI Resourcing Co., Ltd.',
+    Date: '06/2021 - Present',
+    Position: 'Golang Developer',
+    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
+  },
+  {
+    Company: 'THAI CREDIT RETAIL BANK PUBLIC CO.,LTD.',
+    Date: '10/2019 - 05/2021 (1.8Y)',
+    Position: 'Position: .NET Developer'
+  },
+  {
+    Company: 'AZURE COMPUTERS (THAILAND) CO.,LTD.',
+    Date: '03/2019 - 09/2019 (7M)',
+    Position: '.NET Developer',
+    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
+  },
+  {
+    Company: 'TALENT PLACEMENT CONSULTING AND RECRUITMENT CO.,LTD.',
+    Date: '10/2017 - 02/2019 (1.5Y)',
+    Position: '.NET(Web) Developer',
+    Description: 'OnSite: Kiatnakin Phatra Bank Public Co.,Ltd.'
+  },
+  {
+    Company: 'CUBE SOFTTECH CO., LTD.',
+    Date: '03/2017 - 09/2017 (7M)',
+    Position: '.NET(Web) Developer',
+    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
+  },
+  {
+    Company: 'SIMAT TECHNOLOGEIS PUBLIC CO.,LTD.',
+    Date: '01/2014 - 02/2017 (2.4Y)',
+    Position: '.NET(Web) Developer',
+  },
+  {
+    Company: 'SPEED PLUS SOFT',
+    Date: '09/2011 - 02/2012 (6M)',
+    Position: '.NET(Web) Developer',
+  },
+])
+</script>
+
 <template >
   <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md q-pt-xl">
     <div class="q-pb-sm">
@@ -5,48 +59,17 @@
     </div>
     <div class="bg-grey-10 text-white">
       <q-timeline :layout="$q.screen.sm || $q.screen.xs ? 'dense' : 'comfortable'" side="right" color="secondary">
-        <q-timeline-entry heading>Timeline heading</q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="left">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 21, 1986" side="right" icon="delete">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry heading>November, 2017</q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="left" avatar="https://cdn.quasar.dev/img/avatar3.jpg">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="right">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="left" color="orange" icon="done_all">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="right">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-        </q-timeline-entry>
-
-        <q-timeline-entry title="Event Title" subtitle="February 22, 1986" side="left">
-          <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        <q-timeline-entry v-for="(item, index) in datas" :key="index" :title="item.Company" :subtitle="item.Date" color="orange" side="left">
+          <div>
+            <u>Position:</u>
+            {{ item.Position }}
+          </div>
+          <div v-if="item.Description">
+            <u>Description:</u>
+            {{ item.Description }}
+          </div>
         </q-timeline-entry>
       </q-timeline>
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-import Title from 'src/components/Title.vue';
-</script>
-
-<style scoped>
-.ttx {
-  width: 15%;
-}
-</style>
