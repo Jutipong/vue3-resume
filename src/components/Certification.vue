@@ -2,7 +2,7 @@
     <div :class="!$q.screen.xs && !$q.screen.sm && 'q-ma-xl'">
         <h3>{{ title }}</h3>
         <div v-for="(item,index) in datas" :key="index">
-            <div>- {{ item }}</div>
+            <div>{{ item }}</div>
         </div>
     </div>
 </template>
@@ -13,6 +13,7 @@ const title = ref<string>('Certification')
 const datas = ref<Array<string>>([
     'MCSD: Web Applications',
     'MCPS: Microsoft Certified Professional',
+    'Programming in HTML5 with JavaScript and CSS3'
 ])
 
 </script>
@@ -23,6 +24,6 @@ h3 {
     text-transform: uppercase;
     font-weight: 600;
     display: block;
-    border-bottom: 1px solid green
+    border-bottom: 1px solid green;
 }
 </style>

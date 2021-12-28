@@ -6,7 +6,7 @@
             <div>{{ item.Description }}</div>
             <div>
                 <strong>GPA:</strong>
-                {{ item.GPA }}
+                {{ item.GPA.toFixed(2) }}
             </div>
         </div>
     </div>
