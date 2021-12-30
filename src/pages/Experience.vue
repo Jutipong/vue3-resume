@@ -17,35 +17,35 @@ const datas = ref<Array<ExperienceModel>>([
     Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
   },
   {
-    Company: 'THAI CREDIT RETAIL BANK PUBLIC CO.,LTD.',
+    Company: 'Thai Credit Retail Bank Public Co.,Ltd.',
     Date: '10/2019 - 05/2021 (1.8Y)',
     Position: 'Position: .NET Developer'
   },
   {
-    Company: 'AZURE COMPUTERS (THAILAND) CO.,LTD.',
+    Company: 'Azure Computers (Thailand) Co., Ltd.',
     Date: '03/2019 - 09/2019 (7M)',
     Position: '.NET Developer',
     Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
   },
   {
-    Company: 'TALENT PLACEMENT CONSULTING AND RECRUITMENT CO.,LTD.',
+    Company: 'TP Consulting and Recruitment Co., Ltd.',
     Date: '10/2017 - 02/2019 (1.5Y)',
-    Position: '.NET(Web) Developer',
+    Position: 'Position: .NET Developer',
     Description: 'OnSite: Kiatnakin Phatra Bank Public Co.,Ltd.'
   },
   {
-    Company: 'CUBE SOFTTECH CO., LTD.',
+    Company: 'Cube SoftTech Co., Ltd.',
     Date: '03/2017 - 09/2017 (7M)',
     Position: '.NET(Web) Developer',
     Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
   },
   {
-    Company: 'SIMAT TECHNOLOGEIS PUBLIC CO.,LTD.',
+    Company: 'Simat Technologies Public Co.,Ltd.',
     Date: '01/2014 - 02/2017 (2.4Y)',
     Position: '.NET(Web) Developer',
   },
   {
-    Company: 'SPEED PLUS SOFT',
+    Company: 'Speed Plus Soft',
     Date: '09/2011 - 02/2012 (6M)',
     Position: '.NET(Web) Developer',
   },
