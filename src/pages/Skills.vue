@@ -26,14 +26,10 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'Vuetify', Img: 'Vuetify.png' },
     { Title: 'Boostrap', Img: 'Bootstrap.png' },
     // { Title: 'HTML', Img: 'Html.png' },
-    // { Title: 'CSS', Img: 'Css.png' },
+    { Title: 'CSS', Img: 'Css.png' },
     { Title: 'Git/Github', Img: 'Octocat.png' },
     { Title: 'Vim', Img: 'Vim.png' }]
 )
-// const srcImg = (img: string) => {
-//     const res = require(`/assets/img/logo/${img}`)
-//     return res 
-// }
 </script>
 
 <template>
