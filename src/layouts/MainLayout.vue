@@ -47,10 +47,11 @@
 
       <q-page-sticky position="bottom-right" :offset="[20, 20]">
         <q-btn
-          target="_blank"
+          fab
           icon="las la-file-download"
           color="positive"
           href="https://www.cakeresume.com/pdf/s--UdGtXJ9Yonm0BoqC-I0JuA--/xaJ1R.pdf"
+          target="_blank"
         >
           <q-tooltip>Download Resume</q-tooltip>
         </q-btn>
