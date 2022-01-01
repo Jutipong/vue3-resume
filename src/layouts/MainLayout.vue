@@ -46,7 +46,7 @@
       <router-view />
 
       <q-page-sticky position="bottom-right" :offset="[20, 20]">
-        <q-btn fab icon="las la-file-download" color="positive" href="https://www.cakeresume.com/pdf/s--gdoKH3DGds2B0ddd9DBM_w--/jwpYm.pdf">
+        <q-btn fab icon="las la-file-download" color="positive" href="https://www.cakeresume.com/pdf/s--0mh9GueAv2SyxyB0xPRvjQ--/BOE2b.pdf">
           <q-tooltip>Download Resume</q-tooltip>
         </q-btn>
       </q-page-sticky>
