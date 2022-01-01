@@ -26,7 +26,7 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'Vuetify', Img: 'Vuetify.png' },
     { Title: 'Boostrap', Img: 'Bootstrap.png' },
     // { Title: 'HTML', Img: 'Html.png' },
-    { Title: 'CSS', Img: 'Css.png' },
+    { Title: 'CSS', Img: 'css.png' },
     { Title: 'Git/Github', Img: 'Octocat.png' },
     { Title: 'Vim', Img: 'Vim.png' }]
 )
