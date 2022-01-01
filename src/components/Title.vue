@@ -15,7 +15,7 @@ const prop = defineProps<{
 </template>
 
 <style scoped lang="scss">
-@import "../css/constants.scss";
+@import "@css/constants.scss";
 
 .title {
     text-align: center;
