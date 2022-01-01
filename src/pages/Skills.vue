@@ -9,7 +9,7 @@ import { ref } from 'vue';
 
 const photos = ref<Array<PhotoModel>>([
     { Title: '.Net Core', Img: 'core.png' },
-    { Title: 'Entity', Img: 'ef.png' },
+    { Title: 'Entity', Img: 'entity.png' },
     { Title: 'SQL Server', Img: 'sqlserver.png' },
     { Title: 'Oracle', Img: 'oracle.png' },
     { Title: 'SQLite', Img: 'sqlite.png' },
