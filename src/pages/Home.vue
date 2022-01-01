@@ -15,7 +15,7 @@
 </template>
 
 <style scoped lang="scss">
-@import "../css/constants.scss";
+@import "@css/constants.scss";
 
 .header {
   padding: 20px;
@@ -23,7 +23,6 @@
 }
 
 .parallax {
-  // background-image: url("../assets/img/bg.jpeg");
   background-image: url("assets/img/bg.jpeg");
   background-attachment: fixed;
   background-position: center;

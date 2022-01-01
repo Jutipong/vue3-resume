@@ -7,7 +7,7 @@ type ExperienceModel = {
 }
 
 import { ref } from 'vue';
-import Title from 'src/components/Title.vue';
+import Title from '@components/Title.vue';
 
 const datas = ref<Array<ExperienceModel>>([
   {

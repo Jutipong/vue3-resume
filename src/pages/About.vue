@@ -1,9 +1,9 @@
 <script lang="ts" setup>
-import Title from '../components/Title.vue';
-import Contact from '../components/Contact.vue'
-import Personal from '../components/Personal.vue'
-import Education from 'src/components/Education.vue';
-import Certification from 'src/components/Certification.vue';
+import Title from '@components/Title.vue';
+import Contact from '@components/Contact.vue'
+import Personal from '@components/Personal.vue'
+import Education from '@components/Education.vue';
+import Certification from '@components/Certification.vue';
 </script>
 
 <template>
