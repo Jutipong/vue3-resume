@@ -36,18 +36,18 @@ const datas = ref<Array<ExperienceModel>>([
   {
     Company: 'Cube SoftTech Co., Ltd.',
     Date: '03/2017 - 09/2017 (7M)',
-    Position: '.NET(Web) Developer',
+    Position: '.NET Developer',
     Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
   },
   {
     Company: 'Simat Technologies Public Co.,Ltd.',
     Date: '01/2014 - 02/2017 (2.4Y)',
-    Position: '.NET(Web) Developer',
+    Position: '.NET Developer',
   },
   {
     Company: 'Speed Plus Soft',
     Date: '09/2011 - 02/2012 (6M)',
-    Position: '.NET(Web) Developer',
+    Position: '.NET Developer',
   },
 ])
 </script>
