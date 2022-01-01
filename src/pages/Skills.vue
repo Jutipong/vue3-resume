@@ -45,7 +45,7 @@ const photos = ref<Array<PhotoModel>>([
         </div>
         <div class="row items-center justify-center">
             <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 q-pa-sm" v-for="(item, index) in photos" :key="index">
-                <q-img :src="require(`assets/img/logo/${item.Img}`)">
+                <q-img :src="require(`assets/img/bg.jpeg`)">
                     <q-tooltip>{{ item.Title }}</q-tooltip>
                 </q-img>
             </div>
