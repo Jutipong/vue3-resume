@@ -4,7 +4,7 @@
       <div class="name">
         <div class="wrapper-name">
           <transition style="animation-duration: 6s" appear enter-active-class="animated fadeIn">
-            <div class="namex">jutipong subin</div>
+            <div class="namex">jutipong subinxx</div>
           </transition>
           <hr />
           <p class="line anim-typewriter">Full-Stack Developer</p>
@@ -23,7 +23,7 @@
 }
 
 .parallax {
-  background-image: url('../assets/img/bg.jpeg');
+  background-image: url("../assets/img/bg.jpeg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

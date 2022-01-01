@@ -46,7 +46,7 @@
       <router-view />
 
       <q-page-sticky position="bottom-right" :offset="[20, 20]">
-        <q-btn fab icon="las la-file-download" color="positive" href="https://www.cakeresume.com/pdf/s--YPqlNDFzYCthU9jbo29TBA--/pwmrM.pdf">
+        <q-btn fab icon="las la-file-download" color="positive" href="https://www.cakeresume.com/pdf/s--gdoKH3DGds2B0ddd9DBM_w--/jwpYm.pdf">
           <q-tooltip>Download Resume</q-tooltip>
         </q-btn>
       </q-page-sticky>
@@ -66,31 +66,4 @@
 </template>
 
 <script setup lang="ts">
-// import { computed, onMounted } from 'vue'
-// import { Platform, LocalStorage, Dark } from 'quasar'
-// import { useRouter } from 'vue-router';
-// const router = useRouter();
-
-// onMounted(() => Dark.set(LocalStorage.getItem('dark_mode') ?? false))
-// const isMobile = computed<boolean>(() => (Boolean)(Platform.is.mobile))
-// const onDarkMode = () => {
-//   Dark.toggle()
-//   LocalStorage.set('dark_mode', Dark.mode)
-// }
-
-// const routerName = computed(() => router.currentRoute.value.fullPath.replace('/', ''))
 </script>
-
-<style scoped>
-/* .q-layout__section--marginal {
-  background-color: transparent;
-} */
-/* .mb {
-  background: transparent;
-} */
-/* .mb {
-  padding-top: 2px;
-  padding-bottom: 2px; */
-/* padding-left: 10px; */
-/* } */
-</style>
