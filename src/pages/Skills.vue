@@ -27,7 +27,8 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'Boostrap', Img: 'Bootstrap.png' },
     { Title: 'HTML', Img: 'Html.png' },
     { Title: 'CSS', Img: 'Css.png' },
-    { Title: 'Git/Github', Img: 'Octocat.png' }]
+    { Title: 'Git/Github', Img: 'Octocat.png' },
+    { Title: 'Vim', Img: 'Vim.png' }]
 )
 </script>
 
