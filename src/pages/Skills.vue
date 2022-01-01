@@ -3,8 +3,8 @@ interface PhotoModel {
     Title: string,
     Img: string
 }
+import Title from '@components/Title.vue';
 
-import Title from '../components/Title.vue';
 import { ref } from 'vue';
 
 const photos = ref<Array<PhotoModel>>([
@@ -42,7 +42,7 @@ const photos = ref<Array<PhotoModel>>([
         </div>
         <div class="row items-center justify-center">
             <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 q-pa-sm" v-for="(item, index) in photos" :key="index">
-                <q-img :src="require(`assets/img/skills/${item.Img}`)">
+                <q-img :src="require(`@img/skills/${item.Img}`)">
                     <q-tooltip>{{ item.Title }}</q-tooltip>
                 </q-img>
             </div>

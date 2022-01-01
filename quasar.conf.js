@@ -9,7 +9,7 @@
 /* eslint-env node */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { configure } = require('quasar/wrappers');
-
+const path = require('path')
 module.exports = configure(function (ctx) {
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
@@ -76,6 +76,15 @@ module.exports = configure(function (ctx) {
       chainWebpack(/* chain */) {
         //
       },
+      extendWebpack(cfg, { isServer, isClient }) {
+        cfg.resolve.alias = {
+          ...cfg.resolve.alias, // This adds the existing alias
+
+          // Add your own alias like this
+          '@components': path.resolve(__dirname, './src/components'),
+          '@img': path.resolve(__dirname, './src/assets/img'),
+        }
+      }
     },
 
     // Full list of options: https://quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer
