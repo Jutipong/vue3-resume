@@ -21,14 +21,14 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'NodeJs', Img: 'NodeJs.png' },
     { Title: 'NestJs', Img: 'nest.svg' },
     { Title: 'Vue2 / Vue3', Img: 'vue.png' },
-    { Title: 'Nuxt', Img: 'nuxt.png' },
-    { Title: 'Quasar', Img: 'quasar.png' },
-    { Title: 'Vuetify', Img: 'vuetify.png' },
-    { Title: 'Boostrap', Img: 'bootstrap.png' },
+    { Title: 'Nuxt', Img: 'Nuxt.png' },
+    { Title: 'Quasar', Img: 'Quasar.png' },
+    { Title: 'Vuetify', Img: 'Vuetify.png' },
+    { Title: 'Boostrap', Img: 'Bootstrap.png' },
     { Title: 'HTML', Img: 'html.png' },
     { Title: 'CSS', Img: 'css.png' },
-    { Title: 'Git/Github', Img: 'octocat.png' },
-    { Title: 'Vim', Img: 'vim.png' }]
+    { Title: 'Git/Github', Img: 'Octocat.png' },
+    { Title: 'Vim', Img: 'Vim.png' }]
 )
 </script>
 
