@@ -19,7 +19,7 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'JavaScript', Img: 'JavaScript.png' },
     { Title: 'TypeScript', Img: 'TypeScript.png' },
     { Title: 'NodeJs', Img: 'NodeJs.png' },
-    { Title: 'NestJs', Img: 'NestJs.svg' },
+    { Title: 'NestJs', Img: 'nest.svg' },
     { Title: 'Vue2 / Vue3', Img: 'vue.png' },
     { Title: 'Nuxt', Img: 'nuxt.png' },
     { Title: 'Quasar', Img: 'quasar.png' },
