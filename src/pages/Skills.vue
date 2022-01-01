@@ -13,7 +13,7 @@ const photos = ref<Array<PhotoModel>>([
     { Title: 'SQL Server', Img: 'SqlServer.png' },
     { Title: 'Oracle', Img: 'Oracle.png' },
     { Title: 'SQLite', Img: 'SQLite.png' },
-    { Title: 'Go', Img: 'Go.png' },
+    // { Title: 'Go', Img: 'Go.png' },
     { Title: 'Go Fiber', Img: 'GoFiber.png' },
     { Title: 'Go Gin', Img: 'GoGin.png' },
     { Title: 'JavaScript', Img: 'JavaScript.png' },
