@@ -8,27 +8,27 @@ import Title from '../components/Title.vue';
 import { ref } from 'vue';
 
 const photos = ref<Array<PhotoModel>>([
-    { Title: '.Net Core', Img: 'NetCore.png' },
-    { Title: 'Entity', Img: 'Ef.png' },
-    { Title: 'SQL Server', Img: 'SqlServer.png' },
-    { Title: 'Oracle', Img: 'Oracle.png' },
-    { Title: 'SQLite', Img: 'SQLite.png' },
-    // { Title: 'Go', Img: 'Go.png' },
-    { Title: 'Go Fiber', Img: 'GoFiber.png' },
-    { Title: 'Go Gin', Img: 'GoGin.png' },
-    { Title: 'JavaScript', Img: 'JavaScript.png' },
-    { Title: 'TypeScript', Img: 'TypeScript.png' },
-    { Title: 'NodeJs', Img: 'NodeJs.png' },
-    { Title: 'NestJs', Img: 'NestJs.svg' },
-    // { Title: 'Vue2 / Vue3', Img: 'VueJs.png' },
-    { Title: 'Nuxt', Img: 'Nuxt.png' },
-    { Title: 'Quasar', Img: 'Quasar.png' },
-    { Title: 'Vuetify', Img: 'Vuetify.png' },
-    { Title: 'Boostrap', Img: 'Bootstrap.png' },
-    // { Title: 'HTML', Img: 'Html.png' },
+    { Title: '.Net Core', Img: 'netcore.png' },
+    { Title: 'Entity', Img: 'ef.png' },
+    { Title: 'SQL Server', Img: 'sqlserver.png' },
+    { Title: 'Oracle', Img: 'oracle.png' },
+    { Title: 'SQLite', Img: 'sqlite.png' },
+    { Title: 'Go', Img: 'go.png' },
+    { Title: 'Go Fiber', Img: 'go-fiber.png' },
+    { Title: 'Go Gin', Img: 'go-gin.png' },
+    { Title: 'JavaScript', Img: 'javascript.png' },
+    { Title: 'TypeScript', Img: 'typescript.png' },
+    { Title: 'NodeJs', Img: 'nodejs.png' },
+    { Title: 'NestJs', Img: 'nest.svg' },
+    { Title: 'Vue2 / Vue3', Img: 'vue.png' },
+    { Title: 'Nuxt', Img: 'nuxt.png' },
+    { Title: 'Quasar', Img: 'quasar.png' },
+    { Title: 'Vuetify', Img: 'vuetify.png' },
+    { Title: 'Boostrap', Img: 'bootstrap.png' },
+    { Title: 'HTML', Img: 'html.png' },
     { Title: 'CSS', Img: 'css.png' },
-    { Title: 'Git/Github', Img: 'Octocat.png' },
-    { Title: 'Vim', Img: 'Vim.png' }]
+    { Title: 'Git/Github', Img: 'octocat.png' },
+    { Title: 'Vim', Img: 'vim.png' }]
 )
 </script>
 
