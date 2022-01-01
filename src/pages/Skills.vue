@@ -8,7 +8,7 @@ import Title from '../components/Title.vue';
 import { ref } from 'vue';
 
 const photos = ref<Array<PhotoModel>>([
-    { Title: '.Net Core', Img: 'netcore.png' },
+    { Title: '.Net Core', Img: 'core.png' },
     { Title: 'Entity', Img: 'ef.png' },
     { Title: 'SQL Server', Img: 'sqlserver.png' },
     { Title: 'Oracle', Img: 'oracle.png' },
