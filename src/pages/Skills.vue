@@ -9,18 +9,15 @@ interface PhotoModel {
 
 const photos = ref<Array<PhotoModel>>([
     { Title: '.Net Core', Img: 'NetCore.png' },
-    { Title: 'C#', Img: 'Csharp.png' },
-    { Title: 'Entity', Img: 'Ef.png' },
     { Title: 'SQL Server', Img: 'SqlServer.png' },
     { Title: 'Go', Img: 'Go.png' },
     { Title: 'JavaScript', Img: 'JavaScript.png' },
     { Title: 'TypeScript', Img: 'TypeScript.png' },
     { Title: 'NodeJs', Img: 'NodeJs.png' },
     { Title: 'Vue2 / Vue3', Img: 'Vue.png' },
-    { Title: 'HTML', Img: 'Html.png' },
-    { Title: 'CSS', Img: 'Css.png' },
-    { Title: 'Git/Github', Img: 'Octocat.png' },
-    { Title: 'Vim', Img: 'Vim.png' }]
+    { Title: 'Angular', Img: 'angular.png' },
+    { Title: 'Vim', Img: 'Vim.png' },
+    { Title: 'Git/Github', Img: 'Octocat.png' }]
 )
 </script>
 
