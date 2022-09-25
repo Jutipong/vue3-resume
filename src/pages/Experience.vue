@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
+import Title from '@components/Title.vue';
+
 type ExperienceModel = {
   Company: string
   Date: string
@@ -6,13 +9,16 @@ type ExperienceModel = {
   Description?: string
 }
 
-import { ref } from 'vue';
-import Title from '@components/Title.vue';
-
 const datas = ref<Array<ExperienceModel>>([
   {
+    Company: 'Azure Computers (Thailand) Co., Ltd.',
+    Date: '05/2022 - Present',
+    Position: 'Golang Developer',
+    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
+  },
+  {
     Company: 'ADI Resourcing Co., Ltd.',
-    Date: '06/2021 - Present',
+    Date: '06/2021 - 04/2022 (11M)',
     Position: 'Golang Developer',
     Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
   },
@@ -52,7 +58,7 @@ const datas = ref<Array<ExperienceModel>>([
 ])
 </script>
 
-<template >
+<template>
   <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md q-pt-xl">
     <div class="q-pb-sm">
       <Title textColor="text-white" title="EXPERIENCE" description="PROFESSIONAL AND ACADEMIC"></Title>
