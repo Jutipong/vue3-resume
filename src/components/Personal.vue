@@ -5,6 +5,8 @@ const nationality = 'Thai'
 const height = 168
 const weight = 68
 const birthDate = 'Jan 20 1988'
+const email = 'jutipong.su@outlook.com'
+const tel = '0885559330 (ais)'
 </script>
 
 <template>
@@ -25,6 +27,14 @@ const birthDate = 'Jan 20 1988'
     <div class="data">
       <strong>Birth Date:</strong>
       {{ birthDate }}
+    </div>
+    <div class="data">
+      <strong>Tel:</strong>
+      {{ tel }}
+    </div>
+    <div class="data">
+      <strong>Email:</strong>
+      {{ email }}
     </div>
   </div>
 </template>
