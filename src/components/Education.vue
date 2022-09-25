@@ -1,11 +1,10 @@
 <script lang="ts" setup>
+import { ref } from 'vue';
 interface Education {
     Title: string
     Description: string
     GPA: number
 }
-
-import { ref } from 'vue';
 
 const datas = ref<Array<Education>>([
     {
