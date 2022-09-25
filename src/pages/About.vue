@@ -10,8 +10,8 @@ import Certification from '@components/Certification.vue';
     <div class="q-pt-xl q-pa-md bg-grey-10 text-white">
         <Title textColor="text-white" title="ABOUT ME" description="HOPE TO KNOW YOU AFTER"></Title>
         <div class="row justify-center">
-            <q-avatar size="220px">
-                <q-img :src="require(`@img/me.png`)">
+            <q-avatar size="200px">
+                <q-img :src="require(`@img/profile-me.png`)">
                 </q-img>
             </q-avatar>
         </div>
