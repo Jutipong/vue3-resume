@@ -50,7 +50,7 @@
           fab
           icon="las la-file-download"
           color="positive"
-          href="https://www.cakeresume.com/pdf/s--hGJNmJ_1m1QLBTnHp5vwZg--/YnLGy.pdf"
+          href="https://www.cakeresume.com/pdf/s--j1kxdRJZXVzDpsN5qC27aQ--/gXb5a.pdf"
           target="_blank"
         >
           <q-tooltip>Download Resume</q-tooltip>
