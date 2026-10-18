@@ -1,1 +1,76 @@
-// app global css in SCSS form
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/JetBrainsMono-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Minimal replacement for the animate.css classes used by Home.vue */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+:root {
+    --term-bg: #1c1c1c;
+    --term-fg: #e6e6e6;
+    --term-dim: #8a8a8a;
+    --term-lavender: #b9a3e3;
+    --term-green: #a6d9a0;
+    --term-yellow: #f6d365;
+    --term-line: #444444;
+    --term-dot: #555555;
+}
+
+.dotted-rule {
+    height: 1px;
+    background-image: linear-gradient(to right, var(--term-line) 50%, transparent 50%);
+    background-size: 6px 1px;
+    background-repeat: repeat-x;
+}

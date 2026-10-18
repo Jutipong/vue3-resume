@@ -1,38 +1,52 @@
-<script lang="ts" setup>
-import Title from '@components/Title.vue';
-import { ref } from 'vue';
+<script setup lang="ts">
+    import Title from '@components/Title.vue'
 
-interface PhotoModel {
-    Title: string,
-    Img: string
-}
+    interface PhotoModel {
+        Title: string
+        Img: string
+    }
 
-const photos = ref<Array<PhotoModel>>([
-    { Title: '.Net Core', Img: 'NetCore.png' },
-    { Title: 'SQL Server', Img: 'SqlServer.png' },
-    { Title: 'Go', Img: 'Go.png' },
-    { Title: 'JavaScript', Img: 'JavaScript.png' },
-    { Title: 'TypeScript', Img: 'TypeScript.png' },
-    { Title: 'NodeJs', Img: 'NodeJs.png' },
-    { Title: 'Vue2 / Vue3', Img: 'Vue.png' },
-    { Title: 'Angular', Img: 'angular.png' },
-    { Title: 'Vim', Img: 'Vim.png' },
-    { Title: 'Git/Github', Img: 'Octocat.png' }]
-)
+    const skillImages = import.meta.glob('../assets/img/skills/*.{png,svg}', { eager: true, import: 'default' }) as Record<string, string>
+
+    const skillIcons: Record<string, string> = {}
+    for (const [path, src] of Object.entries(skillImages)) {
+        skillIcons[path.split('/').pop() ?? path] = src
+    }
+
+    const photos: PhotoModel[] = [
+        { Title: '.NET Core', Img: 'NetCore.png' },
+        { Title: 'SQL Server', Img: 'SqlServer.png' },
+        { Title: 'Go', Img: 'Go.png' },
+        { Title: 'JavaScript', Img: 'JavaScript.png' },
+        { Title: 'TypeScript', Img: 'TypeScript.png' },
+        { Title: 'Node.js', Img: 'NodeJs.png' },
+        { Title: 'Vue 2 / Vue 3', Img: 'Vue.png' },
+        { Title: 'Angular', Img: 'angular.png' },
+        { Title: 'Vim', Img: 'Vim.png' },
+        { Title: 'Git/GitHub', Img: 'Octocat.png' },
+    ]
 </script>
 
 <template>
-    <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md">
-        <div class="row justify-center">
-            <div class="q-ma-md">
-                <Title textColor="text-white" title="SKILLS" description="HERE IS MY ARMAMENT"></Title>
+    <div class="bg-grey-10 p-4 text-white lg:px-12">
+        <div class="flex flex-wrap justify-center">
+            <div class="m-4">
+                <Title
+                    title="SKILLS"
+                    description="HERE IS MY ARMAMENT"
+                    textColor="text-white" />
             </div>
         </div>
-        <div class="row items-center justify-center">
-            <div class="col-xs-2 col-sm-2 col-md-1 col-lg-1 col-xl-1 q-pa-sm" v-for="(item, index) in photos" :key="index">
-                <q-img :src="require(`@img/skills/${item.Img}`)">
-                    <q-tooltip>{{ item.Title }}</q-tooltip>
-                </q-img>
+        <div class="flex flex-wrap items-center justify-center">
+            <div
+                v-for="(item, index) in photos"
+                :key="index"
+                class="w-1/6 p-2 md:w-1/12">
+                <img
+                    :src="skillIcons[item.Img]"
+                    :alt="item.Title"
+                    :title="item.Title"
+                    class="h-auto w-full" />
             </div>
         </div>
     </div>

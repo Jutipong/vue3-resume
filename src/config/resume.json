@@ -1,0 +1,125 @@
+{
+    "profile": {
+        "name": "Jutipong Subin",
+        "title": "Full-Stack Developer"
+    },
+    "personal": {
+        "nationality": "Thai",
+        "height": "168 cm",
+        "weight": "68 kg",
+        "birthDate": "1988-01-20"
+    },
+    "contact": {
+        "title": "Contact",
+        "email": "Jutipong.su@outlook.com, Jutipong.sb@gmail.com",
+        "phone": "0885559330 (AIS)",
+        "github": "https://github.com/Jutipong"
+    },
+    "experience": [
+        {
+            "company": "Azure Computers (Thailand) Co., Ltd.",
+            "start": "05/2022",
+            "end": null,
+            "position": "Golang Developer",
+            "description": "On-site: Krung Thai Bank Public Co., Ltd."
+        },
+        {
+            "company": "ADI Resourcing Co., Ltd.",
+            "start": "06/2021",
+            "end": "04/2022",
+            "position": "Golang Developer",
+            "description": "On-site: Krung Thai Bank Public Co., Ltd."
+        },
+        {
+            "company": "Thai Credit Retail Bank Public Co., Ltd.",
+            "start": "10/2019",
+            "end": "05/2021",
+            "position": ".NET Developer"
+        },
+        {
+            "company": "Azure Computers (Thailand) Co., Ltd.",
+            "start": "03/2019",
+            "end": "09/2019",
+            "position": ".NET Developer",
+            "description": "On-site: Krung Thai Bank Public Co., Ltd."
+        },
+        {
+            "company": "TP Consulting and Recruitment Co., Ltd.",
+            "start": "10/2017",
+            "end": "02/2019",
+            "position": ".NET Developer",
+            "description": "On-site: Kiatnakin Phatra Bank Public Co., Ltd."
+        },
+        {
+            "company": "Cube SoftTech Co., Ltd.",
+            "start": "03/2017",
+            "end": "09/2017",
+            "position": ".NET Developer",
+            "description": "On-site: Krung Thai Bank Public Co., Ltd."
+        },
+        {
+            "company": "Simat Technologies Public Co., Ltd.",
+            "start": "01/2014",
+            "end": "02/2017",
+            "position": ".NET Developer"
+        },
+        {
+            "company": "Speed Plus Soft",
+            "start": "09/2011",
+            "end": "02/2012",
+            "position": ".NET Developer"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Backend",
+            "level": 85,
+            "tags": [
+                { "name": ".NET Core", "icon": "NetCore.png" },
+                { "name": "Go", "icon": "Go.png" },
+                { "name": "Node.js", "icon": "NodeJs.png" }
+            ]
+        },
+        {
+            "category": "Frontend",
+            "level": 80,
+            "tags": [
+                { "name": "Vue 2 / Vue 3", "icon": "Vue.png" },
+                { "name": "Angular", "icon": "angular.png" },
+                { "name": "TypeScript", "icon": "TypeScript.png" },
+                { "name": "JavaScript", "icon": "JavaScript.png" }
+            ]
+        },
+        {
+            "category": "Database",
+            "level": 75,
+            "tags": [{ "name": "SQL Server", "icon": "SqlServer.png" }]
+        },
+        {
+            "category": "Tools",
+            "level": 70,
+            "tags": [
+                { "name": "Git / GitHub", "icon": "Octocat.png" },
+                { "name": "Vim", "icon": "Vim.png" }
+            ]
+        }
+    ],
+    "education": [
+        {
+            "title": "Bachelor’s Degree",
+            "description": "Computer Engineering, Rajamangala University of Technology Isan, Thailand.",
+            "gpa": 2.77
+        },
+        {
+            "title": "Diploma",
+            "description": "Computer Technology, Rajamangala University of Technology Isan, Thailand.",
+            "gpa": 2.26
+        },
+        {
+            "title": "Vocational",
+            "description": "Electronics, Nakhon Ratchasima Technical College, Thailand.",
+            "gpa": 3.0
+        }
+    ],
+    "certifications": ["MCSD: Web Applications", "MCPS: Microsoft Certified Professional", "Programming in HTML5 with JavaScript and CSS3"]
+}

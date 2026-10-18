@@ -1,0 +1,17 @@
+# Build output
+dist
+.quasar
+node_modules
+
+# Quasar platform folders
+src-bex/www
+src-capacitor
+src-cordova
+
+# Generated declaration files
+src/**/*.d.ts
+
+# Lock files
+pnpm-lock.yaml
+yarn.lock
+package-lock.json

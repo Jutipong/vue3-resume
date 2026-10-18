@@ -1,14 +1,5 @@
-$colors: (
-  primary: #353535,
-  // secondary: #3C6E71,
-  // complementary: #284B63,
-  // light: whitesmoke,
-  dark: #D9D9D9,
-  // error: #ff2818,
-);
+$color-primary: #353535;
+$color-dark: #d9d9d9;
 
-$breakpoints: (
-  small: 767px,
-  medium: 992px,
-  large: 1200px,
-);
+$breakpoint-small: 767px;
+$breakpoint-medium: 992px;

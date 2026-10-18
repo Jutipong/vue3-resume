@@ -1,0 +1,5 @@
+* text=auto eol=crlf
+.gitattributes text eol=lf
+.nvmrc text eol=lf
+netlify.toml text eol=lf
+public/_redirects text eol=lf

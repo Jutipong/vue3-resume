@@ -1,81 +1,70 @@
-<script lang="ts" setup>
-import { ref } from 'vue';
-import Title from '@components/Title.vue';
+<script setup lang="ts">
+    import Title from '@components/Title.vue'
 
-type ExperienceModel = {
-  Company: string
-  Date: string
-  Position: string
-  Description?: string
-}
+    import resume from '../config/resume.json'
 
-const datas = ref<Array<ExperienceModel>>([
-  {
-    Company: 'Azure Computers (Thailand) Co., Ltd.',
-    Date: '05/2022 - Present',
-    Position: 'Golang Developer',
-    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
-  },
-  {
-    Company: 'ADI Resourcing Co., Ltd.',
-    Date: '06/2021 - 04/2022 (11M)',
-    Position: 'Golang Developer',
-    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
-  },
-  {
-    Company: 'Thai Credit Retail Bank Public Co.,Ltd.',
-    Date: '10/2019 - 05/2021 (1.8Y)',
-    Position: 'Position: .NET Developer'
-  },
-  {
-    Company: 'Azure Computers (Thailand) Co., Ltd.',
-    Date: '03/2019 - 09/2019 (7M)',
-    Position: '.NET Developer',
-    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
-  },
-  {
-    Company: 'TP Consulting and Recruitment Co., Ltd.',
-    Date: '10/2017 - 02/2019 (1.5Y)',
-    Position: 'Position: .NET Developer',
-    Description: 'OnSite: Kiatnakin Phatra Bank Public Co.,Ltd.'
-  },
-  {
-    Company: 'Cube SoftTech Co., Ltd.',
-    Date: '03/2017 - 09/2017 (7M)',
-    Position: '.NET Developer',
-    Description: 'OnSite: Krung Thai Bank Public Co.,Ltd.'
-  },
-  {
-    Company: 'Simat Technologies Public Co.,Ltd.',
-    Date: '01/2014 - 02/2017 (2.4Y)',
-    Position: '.NET Developer',
-  },
-  {
-    Company: 'Speed Plus Soft',
-    Date: '09/2011 - 02/2012 (6M)',
-    Position: '.NET Developer',
-  },
-])
+    type ExperienceModel = {
+        company: string
+        start: string
+        end: string | null
+        position: string
+        description?: string
+    }
+
+    const experience = resume.experience as ExperienceModel[]
+
+    function parseMonth(value: string): Date {
+        const [month, year] = value.split('/').map(Number)
+        return new Date(year, month - 1, 1)
+    }
+
+    function monthsBetween(start: string, end: Date): number {
+        const from = parseMonth(start)
+        return (end.getFullYear() - from.getFullYear()) * 12 + (end.getMonth() - from.getMonth())
+    }
+
+    function formatDuration(months: number): string {
+        if (months < 12) {
+            return `${months}M`
+        }
+        return `${(months / 12).toFixed(1)}Y`
+    }
+
+    function formatRange(start: string, end: string | null): string {
+        const months = monthsBetween(start, end ? parseMonth(end) : new Date())
+        return `${start} - ${end ?? 'Present'} (${formatDuration(months)})`
+    }
 </script>
 
 <template>
-  <div :class="!$q.screen.sm && !$q.screen.xs && 'q-pl-xl q-pr-xl'" class="bg-grey-10 text-white q-pa-md q-pt-xl">
-    <div class="q-pb-sm">
-      <Title textColor="text-white" title="EXPERIENCE" description="PROFESSIONAL AND ACADEMIC"></Title>
+    <div class="bg-grey-10 p-4 pt-12 text-white lg:px-12">
+        <div class="pb-2">
+            <Title
+                title="EXPERIENCE"
+                description="PROFESSIONAL AND ACADEMIC"
+                textColor="text-white" />
+        </div>
+        <div class="bg-grey-10 text-white">
+            <ol class="border-secondary relative ml-3 border-l-2">
+                <li
+                    v-for="(item, index) in experience"
+                    :key="index"
+                    class="relative pb-6 pl-6 last:pb-0">
+                    <span class="ring-grey-10 absolute top-1.5 left-[-8px] h-4 w-4 rounded-full bg-orange-400 ring-4" />
+                    <div class="font-medium">{{ item.company }}</div>
+                    <div class="text-sm opacity-80">{{ formatRange(item.start, item.end) }}</div>
+                    <div class="mt-1">
+                        <u>Position:</u>
+                        {{ item.position }}
+                    </div>
+                    <div
+                        v-if="item.description"
+                        class="mt-1">
+                        <u>Description:</u>
+                        {{ item.description }}
+                    </div>
+                </li>
+            </ol>
+        </div>
     </div>
-    <div class="bg-grey-10 text-white">
-      <q-timeline :layout="$q.screen.sm || $q.screen.xs ? 'dense' : 'comfortable'" side="right" color="secondary">
-        <q-timeline-entry v-for="(item, index) in datas" :key="index" :title="item.Company" :subtitle="item.Date" color="orange" side="left">
-          <div>
-            <u>Position:</u>
-            {{ item.Position }}
-          </div>
-          <div v-if="item.Description">
-            <u>Description:</u>
-            {{ item.Description }}
-          </div>
-        </q-timeline-entry>
-      </q-timeline>
-    </div>
-  </div>
 </template>
