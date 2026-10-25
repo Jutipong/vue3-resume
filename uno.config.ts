@@ -48,7 +48,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--term-bg);
-    background-image: radial-gradient(ellipse 80% 50% at 50% -10%, rgb(185 163 227 / 8%), transparent);
     color: var(--term-fg);
 }
 `,
