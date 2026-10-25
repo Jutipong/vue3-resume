@@ -17,9 +17,15 @@
     },
     "experience": [
         {
+            "company": "Thai Credit Retail Bank Public Co., Ltd.",
+            "start": "01/2023",
+            "end": null,
+            "position": ".NET Developer"
+        },
+        {
             "company": "Azure Computers (Thailand) Co., Ltd.",
             "start": "05/2022",
-            "end": null,
+            "end": "12/2022",
             "position": "Golang Developer",
             "description": "On-site: Krung Thai Bank Public Co., Ltd."
         },
